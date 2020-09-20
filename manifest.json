@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "UCDextension",
+    "description": "Adds additional UCDavis-related links to Google Home page",
+    "version": "0.1",
+    "author": "Robert Au",
+
+    "browser_action": {
+        "default_icon": "images/icon.png",
+        "default_popup": "popup.html",
+        "default_title": "UCDextension"
+    },
+
+    "content_scripts": [
+    {
+        "matches": [
+            "https://www.google.com/"
+        ],
+        "js": ["inject.js"]
+    }
+    ]
+}
